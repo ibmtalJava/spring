@@ -1,0 +1,5 @@
+package ibmtal.hepsiburada.database;
+
+public interface CountryDao {
+
+}

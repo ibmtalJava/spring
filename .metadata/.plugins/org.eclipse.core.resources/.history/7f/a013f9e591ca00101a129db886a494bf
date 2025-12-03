@@ -1,0 +1,5 @@
+package ibmtal.hepsiburada.business.services;
+
+public interface CityService {
+
+}

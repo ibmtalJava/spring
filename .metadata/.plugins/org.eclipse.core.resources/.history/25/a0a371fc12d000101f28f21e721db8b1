@@ -1,0 +1,9 @@
+package ibmtal.hepsiburada.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+@
+public class Color {
+
+}

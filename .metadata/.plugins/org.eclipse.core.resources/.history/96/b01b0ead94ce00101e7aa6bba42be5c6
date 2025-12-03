@@ -1,0 +1,8 @@
+package ibmtal.hepsiburada.business.services;
+
+
+import ibmtal.hepsiburada.entities.Country;
+
+public interface CountryService {
+	City add(Country country); 
+}

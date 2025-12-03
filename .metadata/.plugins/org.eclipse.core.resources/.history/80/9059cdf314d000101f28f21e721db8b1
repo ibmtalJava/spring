@@ -1,0 +1,30 @@
+package ibmtal.hepsiburada.business.manager;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ibmtal.hepsiburada.business.services.ColorService;
+import ibmtal.hepsiburada.database.ColorDao;
+import ibmtal.hepsiburada.entities.Color;
+@Service
+public class ColorManager implements ColorService {
+	private ColorDao colorDao;
+	@Autowired
+	public ColorManager(ColorDao colorDao) {
+		super();
+		this.colorDao = colorDao;
+	}
+	@Override
+	public Color add(Color color) {
+		Color newColor=this.colorDao.save(color);
+		return newColor;
+	}
+	@Override
+	public ArrayList<Color> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

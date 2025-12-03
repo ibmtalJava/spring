@@ -1,0 +1,16 @@
+package ibmtal.hepsiburada.business.manager;
+
+import org.springframework.stereotype.Service;
+
+import ibmtal.hepsiburada.business.services.CityService;
+import ibmtal.hepsiburada.entities.City;
+@Service
+public class CityManager implements CityService {
+
+	@Override
+	public City add(City city) {	
+		System.out.println(city.getPlateCode());
+		return null;
+	}
+
+}

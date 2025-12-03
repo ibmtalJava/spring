@@ -1,0 +1,23 @@
+package ibmtal.hepsiburada.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/city")
+public class CityController {
+	@GetMapping("addCity")
+	public String addCity(
+			@RequestParam String name
+			,@RequestParam String plateCode
+			,@RequestParam Boolean capital
+		) {
+		return "merhaba "+name;
+	}
+	@GetMapping("getCapitals")
+	public String getCapitals() {
+		return "Ankara";
+	}
+}

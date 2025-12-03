@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;hepsiburada&apos;&#x0D;&#x0A;- Original project: &apos;hepsiburada&apos;&#x0D;&#x0A;- Original element: &apos;ibmtal.hepsiburada.controller.GetCities.java&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ibmtal.hepsiburada.controller{GetCities.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1763969861374" subPackages="false" version="1.0"/>
+</session>

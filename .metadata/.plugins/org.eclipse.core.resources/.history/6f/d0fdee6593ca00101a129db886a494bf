@@ -1,0 +1,13 @@
+package ibmtal.hepsiburada.business.manager;
+
+import ibmtal.hepsiburada.business.services.CityService;
+import ibmtal.hepsiburada.entities.City;
+
+public class CityManager implements CityService {
+
+	@Override
+	public City add(City city) {		
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package ibmtal.hepsiburada.business.manager;
+
+public class ColorManager {
+
+}

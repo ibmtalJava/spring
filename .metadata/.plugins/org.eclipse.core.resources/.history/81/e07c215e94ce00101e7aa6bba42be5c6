@@ -1,0 +1,5 @@
+package ibmtal.hepsiburada.entities;
+
+public class Country {
+
+}
