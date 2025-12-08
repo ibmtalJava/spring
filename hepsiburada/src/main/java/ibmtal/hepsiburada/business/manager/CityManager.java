@@ -46,6 +46,10 @@ public class CityManager implements CityService {
 		if(city.getName().isEmpty()) {
 			result.addError(10, "name", "Boş geçilemez");
 		}
+		if(city.getName().length()>40) {
+			result.addError(12, "name", "en fazla 40 karakter");
+			
+		}
 		return result;
 	}
 

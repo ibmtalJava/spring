@@ -26,6 +26,7 @@ public class ColorController {
 	public Color addNewColor(@RequestBody Color color) {
 		return this.colorService.add(color);
 	}
+	
 	@GetMapping("/getAll")
 	public ArrayList<Color> getAll(){
 		return this.colorService.getAll();
