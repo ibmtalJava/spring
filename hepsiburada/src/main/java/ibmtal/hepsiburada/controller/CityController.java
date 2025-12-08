@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import ibmtal.hepsiburada.business.services.CityService;
+import ibmtal.hepsiburada.core.result.Result;
 import ibmtal.hepsiburada.entities.City;
 
 @RestController
@@ -39,6 +40,12 @@ public class CityController {
 		
 		return cityService.add(city); 
 	}
+	@PostMapping("newCity")
+	@GetMapping
+	public Result<City> newCity(@RequestBody City city){
+		return this.cityService.newCity(city);
+	}
+	
 	@GetMapping("/getAll")
 	public ArrayList<City> getAll(){
 		return cityService.getAll();

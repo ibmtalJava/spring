@@ -1,7 +1,0 @@
-package ibmtal.hepsiburada.business.services;
-
-import ibmtal.hepsiburada.entities.Color;
-
-public interface ColorService {
-	Color add(Color color);
-}

@@ -1,7 +1,0 @@
-package ibmtal.hepsiburada.business.services;
-
-import ibmtal.hepsiburada.entities.City;
-
-public interface CityService {
-	City add(City city); 
-}

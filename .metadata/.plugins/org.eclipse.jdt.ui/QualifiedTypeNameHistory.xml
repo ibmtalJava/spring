@@ -15,9 +15,6 @@
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="ibmtal.hepsiburada.business.services.CityService"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="ibmtal.hepsiburada.entities.City"/>
@@ -28,4 +25,9 @@
     <fullyQualifiedTypeName name="ibmtal.hepsiburada.business.services.CountryService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="ibmtal.hepsiburada.entities.Country"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="ibmtal.hepsiburada.entities.Color"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import ibmtal.hepsiburada.business.services.CityService;
+import ibmtal.hepsiburada.core.result.ErrorItem;
+import ibmtal.hepsiburada.core.result.Result;
 import ibmtal.hepsiburada.database.CityDao;
 import ibmtal.hepsiburada.entities.City;
 @Service
@@ -33,6 +35,18 @@ public class CityManager implements CityService {
 	public ArrayList<City> getAll() {
 		// TODO Auto-generated method stub
 		return (ArrayList<City>) this.cityDao.findAll();
+	}
+
+
+
+	@Override
+	public Result<City> newCity(City city) {
+		Result result=new Result<City>();
+		//city name i boş mu
+		if(city.getName().isEmpty()) {
+			result.addError(10, "name", "Boş geçilemez");
+		}
+		return result;
 	}
 
 }

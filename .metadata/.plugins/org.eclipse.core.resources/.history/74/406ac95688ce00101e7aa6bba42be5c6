@@ -1,5 +1,0 @@
-package ibmtal.hepsiburada.database;
-
-public interface CityDao {
-
-}
