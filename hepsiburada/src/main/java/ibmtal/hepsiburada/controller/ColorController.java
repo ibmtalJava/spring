@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ibmtal.hepsiburada.business.services.ColorService;
+import ibmtal.hepsiburada.core.result.Result;
 import ibmtal.hepsiburada.entities.Color;
 
 @RestController
@@ -30,5 +31,9 @@ public class ColorController {
 	@GetMapping("/getAll")
 	public ArrayList<Color> getAll(){
 		return this.colorService.getAll();
+	}
+	@GetMapping("/getColors")
+	public Result<Color> getColors(){
+		return this.colorService.getColors();
 	}
 }

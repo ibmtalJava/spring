@@ -13,12 +13,13 @@ import ibmtal.hepsiburada.entities.City;
 @Service
 public class CityManager implements CityService {
 	private CityDao cityDao;
-	
+	private Result<City> result;
 	
 	@Autowired
 	public CityManager(CityDao cityDao) {
 		super();
 		this.cityDao = cityDao;
+		this.result=new Result<City>();
 	}
 
 
@@ -41,7 +42,6 @@ public class CityManager implements CityService {
 
 	@Override
 	public Result<City> newCity(City city) {
-		Result result=new Result<City>();
 		//city name i boş mu
 		if(city.getName().isEmpty()) {
 			result.addError(10, "name", "Boş geçilemez");
@@ -50,6 +50,16 @@ public class CityManager implements CityService {
 			result.addError(12, "name", "en fazla 40 karakter");
 			
 		}
+		return result;
+	}
+
+
+
+	@Override
+	public Result<City> getCities() {
+		
+		ArrayList<City> cities=(ArrayList<City>) this.cityDao.findAll();
+		result.setData(cities);
 		return result;
 	}
 

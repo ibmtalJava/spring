@@ -50,5 +50,8 @@ public class CityController {
 	public ArrayList<City> getAll(){
 		return cityService.getAll();
 	}
-
+	@GetMapping("/getCities")
+	public Result<City> getCities(){
+		return this.cityService.getCities();
+	}
 }
